@@ -1,0 +1,91 @@
+/* ============================================
+   NOTIFICATIONS - Notifications Page
+   ============================================ */
+
+@import url('variables.css');
+
+.notifications-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.notification {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    margin-bottom: var(--space-4);
+    transition: var(--transition-base);
+    position: relative;
+    padding-left: 70px;
+}
+
+.notification::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-500);
+}
+
+.notification.unread::before {
+    background: var(--accent-red);
+    box-shadow: 0 0 0 4px rgba(239, 83, 80, 0.2);
+}
+
+.notification:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-200);
+}
+
+.notification h2 {
+    font-size: var(--text-base);
+    margin: 0 0 var(--space-1);
+    color: var(--gray-900);
+}
+
+.notification p {
+    font-size: var(--text-sm);
+    color: var(--gray-600);
+    margin: 0 0 var(--space-2);
+}
+
+.notification .timestamp {
+    font-size: var(--text-xs);
+    color: var(--gray-400);
+}
+
+.notification .notification-actions {
+    display: flex;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+}
+
+.notification .notification-actions a {
+    font-size: var(--text-sm);
+    color: var(--primary-600);
+}
+
+.notification .notification-actions a:hover {
+    color: var(--primary-700);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .notification {
+        padding-left: 50px;
+        padding: var(--space-4) var(--space-4) var(--space-4) 50px;
+    }
+    
+    .notification::before {
+        left: 15px;
+        width: 10px;
+        height: 10px;
+    }
+}

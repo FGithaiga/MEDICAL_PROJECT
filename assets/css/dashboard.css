@@ -1,0 +1,197 @@
+/* ============================================
+   DASHBOARD - User Dashboard
+   ============================================ */
+
+@import url('variables.css');
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: var(--space-6);
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Sidebar Navigation */
+.dashboard-sidebar {
+    background: var(--white);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.dashboard-sidebar .user-info {
+    text-align: center;
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--gray-200);
+    margin-bottom: var(--space-4);
+}
+
+.dashboard-sidebar .user-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto var(--space-2);
+    border: 3px solid var(--primary-50);
+}
+
+.dashboard-sidebar .user-info h3 {
+    font-size: var(--text-base);
+    margin: 0;
+}
+
+.dashboard-sidebar .user-info p {
+    font-size: var(--text-sm);
+    color: var(--gray-500);
+    margin: 0;
+}
+
+.dashboard-sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.dashboard-sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    color: var(--gray-600);
+    transition: var(--transition-base);
+    font-size: var(--text-sm);
+}
+
+.dashboard-sidebar nav ul li a i {
+    width: 20px;
+    text-align: center;
+}
+
+.dashboard-sidebar nav ul li a:hover,
+.dashboard-sidebar nav ul li a.active {
+    background: var(--primary-50);
+    color: var(--primary-600);
+}
+
+.dashboard-sidebar nav ul li a.active {
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.dashboard-content .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-4);
+}
+
+.dashboard-content .stat-card {
+    background: var(--white);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    text-align: center;
+}
+
+.dashboard-content .stat-card h3 {
+    font-size: var(--text-sm);
+    color: var(--gray-500);
+    margin: 0 0 var(--space-2);
+}
+
+.dashboard-content .stat-card p {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-600);
+    margin: 0;
+}
+
+.dashboard-content .stat-card .stat-icon {
+    font-size: var(--text-2xl);
+    color: var(--primary-500);
+    margin-bottom: var(--space-2);
+}
+
+.dashboard-content section {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+}
+
+.dashboard-content section h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-4);
+}
+
+.dashboard-content section h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.dashboard-content section ul {
+    list-style: none;
+}
+
+.dashboard-content section ul li {
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--gray-100);
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+}
+
+.dashboard-content section ul li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-sidebar {
+        position: static;
+    }
+    
+    .dashboard-sidebar nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+    }
+    
+    .dashboard-sidebar nav ul li a {
+        padding: var(--space-2) var(--space-4);
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-content .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-content .stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-sidebar nav ul {
+        flex-direction: column;
+    }
+}

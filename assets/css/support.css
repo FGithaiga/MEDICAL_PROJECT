@@ -1,0 +1,104 @@
+/* ============================================
+   SUPPORT - Support Page
+   ============================================ */
+
+@import url('variables.css');
+
+.support-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.support-container section {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    margin-bottom: var(--space-5);
+}
+
+.support-container section h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-3);
+}
+
+.support-container section h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.support-options ul {
+    list-style: none;
+}
+
+.support-options ul li {
+    padding: var(--space-2) 0;
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+}
+
+.support-options ul li a {
+    color: var(--primary-600);
+    font-weight: var(--font-weight-medium);
+}
+
+.support-options ul li a:hover {
+    color: var(--primary-700);
+}
+
+.faq-link {
+    background: var(--primary-50);
+    border-color: var(--primary-200);
+}
+
+.faq-link p {
+    margin: 0;
+    font-size: var(--text-sm);
+}
+
+.faq-link a {
+    font-weight: var(--font-weight-medium);
+}
+
+.support-form .form-group {
+    margin-bottom: var(--space-4);
+}
+
+.support-form .form-group label {
+    display: block;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-1);
+    font-size: var(--text-sm);
+    color: var(--gray-700);
+}
+
+.support-form .form-group input,
+.support-form .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-primary);
+    font-size: var(--text-sm);
+    transition: var(--transition-base);
+}
+
+.support-form .form-group input:focus,
+.support-form .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.1);
+}
+
+.support-form .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.support-form .btn-primary {
+    width: 100%;
+    justify-content: center;
+}

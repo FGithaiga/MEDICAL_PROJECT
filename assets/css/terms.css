@@ -1,0 +1,56 @@
+/* ============================================
+   TERMS - Terms & Conditions
+   ============================================ */
+
+@import url('variables.css');
+
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.terms-container section {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    margin-bottom: var(--space-5);
+}
+
+.terms-container section h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-3);
+}
+
+.terms-container section h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.terms-container section p {
+    font-size: var(--text-base);
+    line-height: 1.8;
+    color: var(--gray-700);
+}
+
+.terms-container section ul {
+    list-style: disc;
+    padding-left: var(--space-5);
+}
+
+.terms-container section ul li {
+    color: var(--gray-700);
+    margin-bottom: var(--space-1);
+    font-size: var(--text-sm);
+}
+
+.terms-container section a {
+    color: var(--primary-600);
+}
+
+.terms-container section a:hover {
+    color: var(--primary-700);
+}

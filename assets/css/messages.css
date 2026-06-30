@@ -1,0 +1,136 @@
+/* ============================================
+   MESSAGES - Chat System
+   ============================================ */
+
+@import url('variables.css');
+
+.messages-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.message-thread {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    margin-bottom: var(--space-5);
+}
+
+.message-thread h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-4);
+}
+
+.message-thread h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.message {
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-3);
+    background: var(--gray-50);
+}
+
+.message.sent {
+    background: var(--primary-50);
+    margin-left: 20%;
+}
+
+.message.received {
+    background: var(--gray-100);
+    margin-right: 20%;
+}
+
+.message p {
+    margin: 0;
+    font-size: var(--text-sm);
+}
+
+.message .timestamp {
+    font-size: var(--text-xs);
+    color: var(--gray-400);
+    margin-top: var(--space-1);
+    display: block;
+}
+
+/* New Message Form */
+.new-message {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+}
+
+.new-message h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-4);
+}
+
+.new-message h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.new-message .form-group {
+    margin-bottom: var(--space-4);
+}
+
+.new-message .form-group label {
+    display: block;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-1);
+    font-size: var(--text-sm);
+    color: var(--gray-700);
+}
+
+.new-message .form-group input,
+.new-message .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-primary);
+    font-size: var(--text-sm);
+    transition: var(--transition-base);
+}
+
+.new-message .form-group input:focus,
+.new-message .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.1);
+}
+
+.new-message .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .message.sent {
+        margin-left: 10%;
+    }
+    
+    .message.received {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .message.sent {
+        margin-left: 0;
+    }
+    
+    .message.received {
+        margin-right: 0;
+    }
+}

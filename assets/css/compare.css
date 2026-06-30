@@ -1,0 +1,100 @@
+/* ============================================
+   COMPARE - Compare Page
+   ============================================ */
+
+@import url('variables.css');
+
+.compare-section {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.compare-table thead th {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: var(--space-4);
+    text-align: center;
+    font-weight: var(--font-weight-semibold);
+}
+
+.compare-table thead th img {
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-2);
+}
+
+.compare-table thead th h3 {
+    color: var(--white);
+    margin: 0;
+    font-size: var(--text-base);
+}
+
+.compare-table thead th:first-child {
+    background: var(--gray-900);
+    min-width: 150px;
+}
+
+.compare-table td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--gray-200);
+    text-align: center;
+    color: var(--gray-700);
+}
+
+.compare-table td:first-child {
+    font-weight: var(--font-weight-semibold);
+    color: var(--gray-900);
+    text-align: left;
+    background: var(--gray-50);
+}
+
+.compare-table tr:hover td {
+    background: var(--primary-50);
+}
+
+.compare-table tr:hover td:first-child {
+    background: var(--gray-100);
+}
+
+.compare-table td .btn-primary {
+    font-size: var(--text-sm);
+    padding: 8px 20px;
+}
+
+/* Rating Stars */
+.compare-table td .stars {
+    color: var(--accent-gold);
+    font-size: var(--text-base);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .compare-table {
+        font-size: var(--text-sm);
+    }
+    
+    .compare-table thead th img {
+        width: 80px;
+    }
+    
+    .compare-table thead th h3 {
+        font-size: var(--text-sm);
+    }
+    
+    .compare-table td {
+        padding: var(--space-2) var(--space-3);
+    }
+}

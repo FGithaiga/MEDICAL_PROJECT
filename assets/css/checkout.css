@@ -1,0 +1,187 @@
+/* ============================================
+   CHECKOUT - Checkout Page Styles
+   ============================================ */
+
+@import url('variables.css');
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: var(--space-6);
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.checkout-card {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+}
+
+.checkout-card h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-4);
+}
+
+.checkout-card h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.form-group {
+    margin-bottom: var(--space-4);
+}
+
+.form-group label {
+    display: block;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-1);
+    font-size: var(--text-sm);
+    color: var(--gray-700);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-primary);
+    font-size: var(--text-sm);
+    transition: var(--transition-base);
+    background: var(--white);
+    color: var(--gray-800);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Order Summary Sidebar */
+.order-summary {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.order-summary h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-4);
+}
+
+.order-summary h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.summary-product {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.summary-product img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+}
+
+.summary-product div {
+    flex: 1;
+}
+
+.summary-product h4 {
+    font-size: var(--text-sm);
+    margin: 0;
+}
+
+.summary-product p {
+    font-size: var(--text-xs);
+    color: var(--gray-500);
+    margin: 0;
+}
+
+.summary-product span {
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-600);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-2) 0;
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-3) 0;
+    font-size: var(--text-xl);
+}
+
+.summary-total h3 {
+    margin: 0;
+    color: var(--gray-900);
+}
+
+.order-summary .btn-primary,
+.order-summary .btn-secondary {
+    width: 100%;
+    justify-content: center;
+}
+
+.order-summary .btn-primary i {
+    margin-right: var(--space-2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .order-summary {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-card {
+        padding: var(--space-4);
+    }
+    
+    .summary-product {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,56 @@
+/* ============================================
+   PRIVACY POLICY - Privacy Policy Page
+   ============================================ */
+
+@import url('variables.css');
+
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.privacy-container section {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    margin-bottom: var(--space-5);
+}
+
+.privacy-container section h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-3);
+}
+
+.privacy-container section h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.privacy-container section p {
+    font-size: var(--text-base);
+    line-height: 1.8;
+    color: var(--gray-700);
+}
+
+.privacy-container section ul {
+    list-style: disc;
+    padding-left: var(--space-5);
+}
+
+.privacy-container section ul li {
+    color: var(--gray-700);
+    margin-bottom: var(--space-1);
+    font-size: var(--text-sm);
+}
+
+.privacy-container section a {
+    color: var(--primary-600);
+}
+
+.privacy-container section a:hover {
+    color: var(--primary-700);
+}

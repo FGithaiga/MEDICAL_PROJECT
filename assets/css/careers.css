@@ -1,0 +1,127 @@
+/* ============================================
+   CAREERS - Careers Page
+   ============================================ */
+
+@import url('variables.css');
+
+.careers-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.careers-container .intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-6);
+}
+
+.careers-container .intro h2 {
+    text-align: center;
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-5);
+}
+
+.job {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    transition: all var(--transition-base);
+}
+
+.job:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-200);
+}
+
+.job h3 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-2);
+    color: var(--primary-600);
+}
+
+.job .job-meta {
+    display: flex;
+    gap: var(--space-4);
+    font-size: var(--text-sm);
+    color: var(--gray-500);
+    margin-bottom: var(--space-2);
+}
+
+.job .job-meta span {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.job p {
+    font-size: var(--text-sm);
+    color: var(--gray-600);
+    margin-bottom: var(--space-3);
+}
+
+.job .btn-primary {
+    font-size: var(--text-sm);
+    padding: 8px 20px;
+}
+
+/* Benefits */
+.benefits {
+    background: var(--white);
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+    margin-top: var(--space-5);
+}
+
+.benefits h2 {
+    font-size: var(--text-xl);
+    text-align: left;
+    margin-bottom: var(--space-3);
+}
+
+.benefits h2::after {
+    margin: 8px 0 0;
+    width: 40px;
+}
+
+.benefits ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+}
+
+.benefits ul li {
+    padding: var(--space-2) 0;
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+}
+
+.benefits ul li::before {
+    content: '✓';
+    color: var(--primary-500);
+    font-weight: var(--font-weight-bold);
+    margin-right: var(--space-2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .benefits ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .job-listings {
+        grid-template-columns: 1fr;
+    }
+}

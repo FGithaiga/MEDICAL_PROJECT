@@ -1,0 +1,80 @@
+/* ============================================
+   404 - Error Page
+   ============================================ */
+
+@import url('variables.css');
+
+.error-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--space-7) var(--container-padding);
+    text-align: center;
+}
+
+.error-container .error-code {
+    font-size: 120px;
+    font-weight: var(--font-weight-bold);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: var(--space-3);
+}
+
+.error-container .error-icon {
+    font-size: 80px;
+    color: var(--gray-300);
+    margin-bottom: var(--space-4);
+}
+
+.error-container h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-3);
+}
+
+.error-container p {
+    color: var(--gray-500);
+    margin-bottom: var(--space-4);
+}
+
+.error-container .error-actions {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.error-container .error-actions .btn-primary,
+.error-container .error-actions .btn-secondary {
+    min-width: 140px;
+    justify-content: center;
+}
+
+.error-container .error-links {
+    margin-top: var(--space-5);
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.error-container .error-links a {
+    color: var(--gray-500);
+    font-size: var(--text-sm);
+}
+
+.error-container .error-links a:hover {
+    color: var(--primary-600);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .error-container .error-code {
+        font-size: 80px;
+    }
+    
+    .error-container .error-icon {
+        font-size: 60px;
+    }
+}

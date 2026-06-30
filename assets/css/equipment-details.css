@@ -1,0 +1,290 @@
+/* ============================================
+   EQUIPMENT DETAILS - Product Details Page
+   ============================================ */
+
+@import url('variables.css');
+
+/* Product Details Layout */
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-7);
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Gallery */
+.product-gallery .main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-3);
+}
+
+.thumbnail-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-2);
+}
+
+.thumbnail-images img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-base);
+    border: 2px solid transparent;
+}
+
+.thumbnail-images img:hover {
+    border-color: var(--primary-500);
+    transform: scale(1.03);
+}
+
+/* Product Info */
+.product-info h2 {
+    font-size: var(--text-3xl);
+    text-align: left;
+    margin-bottom: var(--space-2);
+}
+
+.product-info h2::after {
+    display: none;
+}
+
+.product-info .rating {
+    color: var(--accent-gold);
+    font-size: var(--text-base);
+    margin-bottom: var(--space-3);
+}
+
+.product-info .price {
+    font-size: var(--text-3xl);
+    color: var(--primary-600);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-4);
+}
+
+.product-info .availability {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+    background: var(--gray-50);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-4);
+}
+
+.product-info .availability p {
+    margin: 0;
+    font-size: var(--text-sm);
+}
+
+.product-info .availability strong {
+    color: var(--gray-700);
+}
+
+.product-info .quantity {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.product-info .quantity label {
+    font-weight: var(--font-weight-medium);
+}
+
+.product-info .quantity input {
+    width: 80px;
+    padding: 8px 12px;
+    border: 2px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-base);
+    text-align: center;
+}
+
+.product-info .product-buttons {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.product-info .product-buttons .btn-primary,
+.product-info .product-buttons .btn-secondary {
+    flex: 1;
+    justify-content: center;
+    min-width: 120px;
+}
+
+/* Specifications */
+.specifications {
+    background: var(--off-white);
+}
+
+.specifications table {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.specifications th {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: var(--space-3) var(--space-4);
+    text-align: left;
+    font-weight: var(--font-weight-semibold);
+}
+
+.specifications td {
+    padding: var(--space-3) var(--space-4);
+    border-bottom: 1px solid var(--gray-200);
+    color: var(--gray-700);
+}
+
+.specifications tr:hover td {
+    background: var(--primary-50);
+}
+
+.specifications tr:last-child td {
+    border-bottom: none;
+}
+
+.specifications td:first-child {
+    font-weight: var(--font-weight-medium);
+    color: var(--gray-900);
+    width: 30%;
+}
+
+/* Seller Info */
+.seller-info .seller-card {
+    display: flex;
+    gap: var(--space-5);
+    align-items: center;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--space-5);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+}
+
+.seller-info .seller-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.seller-info .seller-card h3 {
+    margin-bottom: var(--space-1);
+}
+
+.seller-info .seller-card p {
+    margin: 0;
+    font-size: var(--text-sm);
+}
+
+/* Description */
+.description ul {
+    list-style: none;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+}
+
+.description ul li {
+    padding: var(--space-2) 0;
+    color: var(--gray-700);
+    font-size: var(--text-sm);
+}
+
+/* Reviews */
+.reviews .review {
+    max-width: var(--container-max);
+    margin: 0 auto var(--space-4);
+    padding: var(--space-4);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-100);
+}
+
+.reviews .review h4 {
+    margin-bottom: var(--space-1);
+}
+
+.reviews .review p {
+    margin: 0;
+}
+
+/* Related Products */
+.related-products .equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-5);
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .product-details {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+    
+    .product-gallery .main-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-gallery .main-image {
+        height: 250px;
+    }
+    
+    .product-info .availability {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-info .product-buttons {
+        flex-direction: column;
+    }
+    
+    .description ul {
+        grid-template-columns: 1fr;
+    }
+    
+    .seller-info .seller-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .specifications table {
+        font-size: var(--text-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-gallery .main-image {
+        height: 200px;
+    }
+    
+    .thumbnail-images img {
+        height: 60px;
+    }
+}
