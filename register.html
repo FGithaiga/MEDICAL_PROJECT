@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- Link your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Create an Account</h1>
+        <p>Register to access the medical project system</p>
+    </header>
+
+    <main class="register-container">
+        <form action="register.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+
+        <p class="login-link">
+            Already have an account? <a href="login.html">Login here</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Medical Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

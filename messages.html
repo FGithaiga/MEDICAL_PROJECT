@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <!-- Link your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Messages</h1>
+        <p>View and manage your conversations</p>
+    </header>
+
+    <main class="messages-container">
+        <section class="message-thread">
+            <h2>Conversation with Admin</h2>
+            <div class="message">
+                <p><strong>Admin:</strong> Please remember to update your patient records today.</p>
+                <span class="timestamp">June 30, 2026 - 10:15 AM</span>
+            </div>
+            <div class="message">
+                <p><strong>You:</strong> Noted, I’ll update them before the end of the day.</p>
+                <span class="timestamp">June 30, 2026 - 10:20 AM</span>
+            </div>
+        </section>
+
+        <section class="message-thread">
+            <h2>Conversation with Dr. Kamau</h2>
+            <div class="message">
+                <p><strong>Dr. Kamau:</strong> Can you confirm tomorrow’s appointment schedule?</p>
+                <span class="timestamp">June 29, 2026 - 4:45 PM</span>
+            </div>
+            <div class="message">
+                <p><strong>You:</strong> Yes, I’ll send the updated schedule shortly.</p>
+                <span class="timestamp">June 29, 2026 - 4:50 PM</span>
+            </div>
+        </section>
+
+        <section class="new-message">
+            <h2>Send a New Message</h2>
+            <form action="#" method="post">
+                <label for="recipient">Recipient</label>
+                <input type="text" id="recipient" name="recipient" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Medical Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
