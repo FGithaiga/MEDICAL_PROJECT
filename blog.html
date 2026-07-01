@@ -3,52 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <!-- Link your external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Blog | MediMarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/blog.css">
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>Our Blog</h1>
-        <p>Latest updates and articles from the medical project</p>
+        <div class="logo">
+            <h2>MediMarket</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
 
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Blog</h1>
+            <p>Latest updates and articles from the medical project</p>
+        </div>
+    </section>
+
+    <!-- ================= BLOG CONTENT ================= -->
     <main class="blog-container">
-        <article class="blog-post">
-            <h2>Improving Patient Care with Technology</h2>
-            <p class="date">Published on June 30, 2026</p>
-            <p>
-                Technology is transforming healthcare by streamlining patient records, 
-                improving communication, and enabling better data analysis for medical research.
-            </p>
-            <a href="article.html" class="read-more">Read More</a>
-        </article>
+        <div class="blog-grid">
+            <article class="blog-post">
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> June 30, 2026</span>
+                        <span><i class="fas fa-user"></i> By Admin</span>
+                        <span><i class="fas fa-tag"></i> Technology</span>
+                    </div>
+                    <h2>Improving Patient Care with Technology</h2>
+                    <p>Technology is transforming healthcare by streamlining patient records, improving communication, and enabling better data analysis for medical research.</p>
+                    <a href="article.html" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
 
-        <article class="blog-post">
-            <h2>The Role of Data Science in Medicine</h2>
-            <p class="date">Published on June 25, 2026</p>
-            <p>
-                Data science helps identify patterns in patient outcomes, predict disease risks, 
-                and support evidence-based decision-making in hospitals and clinics.
-            </p>
-            <a href="article.html" class="read-more">Read More</a>
-        </article>
+            <article class="blog-post">
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> June 25, 2026</span>
+                        <span><i class="fas fa-user"></i> By Admin</span>
+                        <span><i class="fas fa-tag"></i> Data Science</span>
+                    </div>
+                    <h2>The Role of Data Science in Medicine</h2>
+                    <p>Data science helps identify patterns in patient outcomes, predict disease risks, and support evidence-based decision-making in hospitals and clinics.</p>
+                    <a href="article.html" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
 
-        <article class="blog-post">
-            <h2>Telemedicine: The Future of Healthcare</h2>
-            <p class="date">Published on June 20, 2026</p>
-            <p>
-                Telemedicine allows patients to consult doctors remotely, reducing travel time 
-                and improving access to healthcare in underserved areas.
-            </p>
-            <a href="article.html" class="read-more">Read More</a>
-        </article>
+            <article class="blog-post">
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span><i class="fas fa-calendar-alt"></i> June 20, 2026</span>
+                        <span><i class="fas fa-user"></i> By Admin</span>
+                        <span><i class="fas fa-tag"></i> Telemedicine</span>
+                    </div>
+                    <h2>Telemedicine: The Future of Healthcare</h2>
+                    <p>Telemedicine allows patients to consult doctors remotely, reducing travel time and improving access to healthcare in underserved areas.</p>
+                    <a href="article.html" class="read-more">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Medical Project. All rights reserved.</p>
+        <div class="footer-container">
+            <div>
+                <h3>MediMarket</h3>
+                <p>Connecting healthcare providers with trusted medical equipment suppliers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

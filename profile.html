@@ -3,48 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-    <!-- Link your external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>User Profile | MediMarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/profile.css">
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>User Profile</h1>
-        <p>Manage your account information</p>
+        <div class="logo">
+            <h2>MediMarket</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
 
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>User Profile</h1>
+            <p>Manage your account information</p>
+        </div>
+    </section>
+
+    <!-- ================= PROFILE CONTENT ================= -->
     <main class="profile-container">
-        <section class="profile-info">
-            <img src="https://via.placeholder.com/120" alt="Profile Photo">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="assets/images/avatar.jpg" alt="Profile Photo">
             <h2>Faith</h2>
-            <p>Email: faith@example.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p>Location: Nairobi, Kenya</p>
-        </section>
+            <p>faith@example.com</p>
+        </div>
 
-        <section class="profile-actions">
-            <h2>Account Settings</h2>
-            <ul>
-                <li><a href="settings.html">Edit Profile</a></li>
-                <li><a href="orders.html">View Orders</a></li>
-                <li><a href="messages.html">Messages</a></li>
-                <li><a href="notifications.html">Notifications</a></li>
-                <li><a href="logout.html">Logout</a></li>
-            </ul>
-        </section>
+        <!-- Profile Grid -->
+        <div class="profile-grid">
+            <div class="profile-card">
+                <h3><i class="fas fa-user-circle"></i> Personal Information</h3>
+                <div class="info-item">
+                    <span class="label">Full Name</span>
+                    <span class="value">Faith</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Email</span>
+                    <span class="value">faith@example.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Phone</span>
+                    <span class="value">+123 456 7890</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Location</span>
+                    <span class="value">Nairobi, Kenya</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Member Since</span>
+                    <span class="value">January 2025</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Role</span>
+                    <span class="value">Registered User</span>
+                </div>
+            </div>
 
-        <section class="profile-details">
-            <h2>Additional Information</h2>
-            <p>Member since: January 2025</p>
-            <p>Role: Registered User</p>
-            <p>Preferences: Email notifications enabled, SMS alerts disabled</p>
-        </section>
+            <div class="profile-card">
+                <h3><i class="fas fa-cog"></i> Account Settings</h3>
+                <ul class="action-list">
+                    <li><a href="settings.html"><i class="fas fa-edit"></i> Edit Profile</a></li>
+                    <li><a href="orders.html"><i class="fas fa-shopping-bag"></i> View Orders</a></li>
+                    <li><a href="messages.html"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="notifications.html"><i class="fas fa-bell"></i> Notifications</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="profile-card">
+                <h3><i class="fas fa-bell"></i> Preferences</h3>
+                <div class="info-item">
+                    <span class="label">Email Notifications</span>
+                    <span class="value"><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Enabled</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">SMS Alerts</span>
+                    <span class="value"><i class="fas fa-times-circle" style="color: var(--accent-red);"></i> Disabled</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Marketing Emails</span>
+                    <span class="value"><i class="fas fa-check-circle" style="color: var(--accent-green);"></i> Enabled</span>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <h3><i class="fas fa-shield-alt"></i> Account Security</h3>
+                <ul class="action-list">
+                    <li><a href="settings.html"><i class="fas fa-key"></i> Change Password</a></li>
+                    <li><a href="settings.html"><i class="fas fa-shield"></i> Two-Factor Authentication</a></li>
+                    <li><a href="settings.html"><i class="fas fa-history"></i> Login History</a></li>
+                </ul>
+            </div>
+        </div>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Medical Project. All rights reserved.</p>
+        <div class="footer-container">
+            <div>
+                <h3>MediMarket</h3>
+                <p>Connecting healthcare providers with trusted medical equipment suppliers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

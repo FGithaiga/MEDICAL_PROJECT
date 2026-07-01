@@ -3,54 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orders</title>
-    <!-- Link your external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Orders | MediMarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/orders.css">
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>Orders</h1>
-        <p>Track and manage your recent orders</p>
+        <div class="logo">
+            <h2>MediMarket</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
 
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Orders</h1>
+            <p>Track and manage your recent orders</p>
+        </div>
+    </section>
+
+    <!-- ================= ORDERS CONTENT ================= -->
     <main class="orders-container">
         <section class="order">
-            <h2>Order #1001</h2>
-            <p><strong>Date:</strong> June 25, 2026</p>
-            <p><strong>Status:</strong> Delivered</p>
-            <ul>
-                <li>Wireless Headphones - $60.00</li>
-                <li>Bluetooth Speaker - $45.00</li>
-            </ul>
-            <a href="order-details.html" class="btn">View Details</a>
+            <div class="order-header">
+                <h2>Order #1001</h2>
+                <span class="status delivered">Delivered</span>
+            </div>
+            <div class="order-details">
+                <p><strong>Date:</strong> June 25, 2026</p>
+                <p><strong>Total:</strong> $105.00</p>
+            </div>
+            <div class="order-items">
+                <ul>
+                    <li>Wireless Headphones - $60.00</li>
+                    <li>Bluetooth Speaker - $45.00</li>
+                </ul>
+            </div>
+            <a href="order-details.html" class="btn-primary">View Details</a>
         </section>
 
         <section class="order">
-            <h2>Order #1002</h2>
-            <p><strong>Date:</strong> June 27, 2026</p>
-            <p><strong>Status:</strong> Processing</p>
-            <ul>
-                <li>Smartwatch - $120.00</li>
-            </ul>
-            <a href="order-details.html" class="btn">View Details</a>
+            <div class="order-header">
+                <h2>Order #1002</h2>
+                <span class="status processing">Processing</span>
+            </div>
+            <div class="order-details">
+                <p><strong>Date:</strong> June 27, 2026</p>
+                <p><strong>Total:</strong> $120.00</p>
+            </div>
+            <div class="order-items">
+                <ul>
+                    <li>Smartwatch - $120.00</li>
+                </ul>
+            </div>
+            <a href="order-details.html" class="btn-primary">View Details</a>
         </section>
 
         <section class="order">
-            <h2>Order #1003</h2>
-            <p><strong>Date:</strong> June 29, 2026</p>
-            <p><strong>Status:</strong> Shipped</p>
-            <ul>
-                <li>Medical Equipment Kit - $250.00</li>
-                <li>First Aid Supplies - $75.00</li>
-            </ul>
-            <a href="order-details.html" class="btn">View Details</a>
+            <div class="order-header">
+                <h2>Order #1003</h2>
+                <span class="status shipped">Shipped</span>
+            </div>
+            <div class="order-details">
+                <p><strong>Date:</strong> June 29, 2026</p>
+                <p><strong>Total:</strong> $325.00</p>
+            </div>
+            <div class="order-items">
+                <ul>
+                    <li>Medical Equipment Kit - $250.00</li>
+                    <li>First Aid Supplies - $75.00</li>
+                </ul>
+            </div>
+            <a href="order-details.html" class="btn-primary">View Details</a>
         </section>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Medical Project. All rights reserved.</p>
+        <div class="footer-container">
+            <div>
+                <h3>MediMarket</h3>
+                <p>Connecting healthcare providers with trusted medical equipment suppliers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

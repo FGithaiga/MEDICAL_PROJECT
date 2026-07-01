@@ -3,58 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers</title>
-    <!-- Link your external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Careers | MediMarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/careers.css">
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>Careers</h1>
-        <p>Join our team and make a difference</p>
+        <div class="logo">
+            <h2>MediMarket</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
 
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Careers</h1>
+            <p>Join our team and make a difference</p>
+        </div>
+    </section>
+
+    <!-- ================= CAREERS CONTENT ================= -->
     <main class="careers-container">
         <section class="intro">
             <h2>Why Work With Us?</h2>
-            <p>
-                At Medical Project, we are committed to improving healthcare through innovation and dedication. 
-                We value teamwork, creativity, and passion for making a positive impact.
-            </p>
+            <p>At MediMarket, we are committed to improving healthcare through innovation and dedication. We value teamwork, creativity, and passion for making a positive impact.</p>
         </section>
 
         <section class="job-openings">
             <h2>Current Openings</h2>
+            <div class="job-listings">
+                <article class="job">
+                    <h3>Software Engineer</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                    </div>
+                    <p>We are looking for a skilled software engineer to help build and maintain our healthcare applications.</p>
+                    <a href="apply.html" class="btn-primary">Apply Now</a>
+                </article>
 
-            <article class="job">
-                <h3>Software Engineer</h3>
-                <p><strong>Location:</strong> Nairobi, Kenya</p>
-                <p><strong>Type:</strong> Full-time</p>
-                <p>
-                    We are looking for a skilled software engineer to help build and maintain our healthcare applications.
-                </p>
-                <a href="apply.html" class="btn">Apply Now</a>
-            </article>
+                <article class="job">
+                    <h3>Data Analyst</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                        <span><i class="fas fa-clock"></i> Contract</span>
+                    </div>
+                    <p>Analyze healthcare data to provide insights that improve patient outcomes and system efficiency.</p>
+                    <a href="apply.html" class="btn-primary">Apply Now</a>
+                </article>
 
-            <article class="job">
-                <h3>Data Analyst</h3>
-                <p><strong>Location:</strong> Remote</p>
-                <p><strong>Type:</strong> Contract</p>
-                <p>
-                    Analyze healthcare data to provide insights that improve patient outcomes and system efficiency.
-                </p>
-                <a href="apply.html" class="btn">Apply Now</a>
-            </article>
-
-            <article class="job">
-                <h3>Customer Support Specialist</h3>
-                <p><strong>Location:</strong> Nairobi, Kenya</p>
-                <p><strong>Type:</strong> Full-time</p>
-                <p>
-                    Provide assistance to users and ensure smooth operation of our medical project platform.
-                </p>
-                <a href="apply.html" class="btn">Apply Now</a>
-            </article>
+                <article class="job">
+                    <h3>Customer Support Specialist</h3>
+                    <div class="job-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</span>
+                        <span><i class="fas fa-clock"></i> Full-time</span>
+                    </div>
+                    <p>Provide assistance to users and ensure smooth operation of our medical project platform.</p>
+                    <a href="apply.html" class="btn-primary">Apply Now</a>
+                </article>
+            </div>
         </section>
 
         <section class="benefits">
@@ -68,9 +109,43 @@
         </section>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Medical Project. All rights reserved.</p>
+        <div class="footer-container">
+            <div>
+                <h3>MediMarket</h3>
+                <p>Connecting healthcare providers with trusted medical equipment suppliers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

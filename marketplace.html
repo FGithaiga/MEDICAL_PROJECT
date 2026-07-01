@@ -3,53 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketplace</title>
-    <!-- Link your external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Marketplace | MediMarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/marketplace.css">
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>Online Marketplace</h1>
-        <p>Find the best products at great prices</p>
+        <div class="logo">
+            <h2>MediMarket</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html" class="active">Marketplace</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Categories</a>
-        <a href="#">Cart</a>
-        <a href="#">Login</a>
-    </nav>
-
-    <div class="container">
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Product 1">
-            <h3>Product 1</h3>
-            <p>High-quality item with great features.</p>
-            <div class="price">$25.00</div>
-            <a href="#" class="btn">Add to Cart</a>
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Medical Equipment Marketplace</h1>
+            <p>Find the best medical equipment at great prices from verified sellers</p>
         </div>
+    </section>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Product 2">
-            <h3>Product 2</h3>
-            <p>Stylish and durable, perfect for everyday use.</p>
-            <div class="price">$40.00</div>
-            <a href="#" class="btn">Add to Cart</a>
-        </div>
+    <!-- ================= MARKETPLACE CONTENT ================= -->
+    <div class="marketplace-container">
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+            <h3><i class="fas fa-filter"></i> Filters</h3>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>Affordable and reliable, customer favorite.</p>
-            <div class="price">$15.00</div>
-            <a href="#" class="btn">Add to Cart</a>
+            <div class="filter-group">
+                <label>Category</label>
+                <select>
+                    <option>All Categories</option>
+                    <option>Diagnostic</option>
+                    <option>Surgical</option>
+                    <option>Laboratory</option>
+                    <option>Imaging</option>
+                    <option>Hospital Furniture</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Price Range</label>
+                <input type="range" min="0" max="2000000" step="10000">
+                <div class="price-range">
+                    <span>KSh 0</span>
+                    <span>KSh 2,000,000</span>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Condition</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> New</label>
+                    <label><input type="checkbox"> Refurbished</label>
+                    <label><input type="checkbox"> Used</label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Warranty</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> 1 Year</label>
+                    <label><input type="checkbox"> 2 Years</label>
+                    <label><input type="checkbox"> 3+ Years</label>
+                </div>
+            </div>
+
+            <div class="filter-actions">
+                <button class="btn-primary">Apply Filters</button>
+                <button class="btn-secondary">Reset</button>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="assets/images/equipment1.jpg" alt="ECG Machine">
+                    <span class="badge">New</span>
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>ECG Machine</h3>
+                    <p class="seller-name">MediTech Supplies</p>
+                    <p class="rating">⭐⭐⭐⭐⭐ (4.9)</p>
+                    <p class="price">KSh 150,000</p>
+                    <a href="equipment-details.html" class="btn-primary">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="assets/images/equipment2.jpg" alt="Patient Monitor">
+                    <span class="badge">New</span>
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Patient Monitor</h3>
+                    <p class="seller-name">HealthCare Solutions</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.7)</p>
+                    <p class="price">KSh 220,000</p>
+                    <a href="equipment-details.html" class="btn-primary">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="assets/images/equipment3.jpg" alt="Ultrasound Machine">
+                    <span class="badge">Refurbished</span>
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Ultrasound Machine</h3>
+                    <p class="seller-name">Prime Medical Equipment</p>
+                    <p class="rating">⭐⭐⭐⭐⭐ (5.0)</p>
+                    <p class="price">KSh 980,000</p>
+                    <a href="equipment-details.html" class="btn-primary">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="assets/images/equipment4.jpg" alt="ICU Ventilator">
+                    <span class="badge">New</span>
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>ICU Ventilator</h3>
+                    <p class="seller-name">MediTech Supplies</p>
+                    <p class="rating">⭐⭐⭐⭐⭐ (4.8)</p>
+                    <p class="price">KSh 1,250,000</p>
+                    <a href="equipment-details.html" class="btn-primary">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="assets/images/equipment5.jpg" alt="Infusion Pump">
+                    <span class="badge">New</span>
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Infusion Pump</h3>
+                    <p class="seller-name">HealthCare Solutions</p>
+                    <p class="rating">⭐⭐⭐⭐☆ (4.5)</p>
+                    <p class="price">KSh 95,000</p>
+                    <a href="equipment-details.html" class="btn-primary">View Details</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="assets/images/equipment6.jpg" alt="Hospital Bed">
+                    <span class="badge">New</span>
+                    <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h3>Electric Hospital Bed</h3>
+                    <p class="seller-name">Prime Medical Equipment</p>
+                    <p class="rating">⭐⭐⭐⭐⭐ (4.6)</p>
+                    <p class="price">KSh 180,000</p>
+                    <a href="equipment-details.html" class="btn-primary">View Details</a>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- ================= PAGINATION ================= -->
+    <div class="pagination">
+        <a href="#" class="disabled"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#"><i class="fas fa-chevron-right"></i></a>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Online Marketplace. All rights reserved.</p>
+        <div class="footer-container">
+            <div>
+                <h3>MediMarket</h3>
+                <p>Your trusted marketplace for quality medical equipment.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

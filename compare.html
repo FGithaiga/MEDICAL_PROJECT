@@ -7,442 +7,214 @@
     <title>Compare Equipment | MediMarket</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/compare.css">
 </head>
 
 <body>
 
     <!-- ================= HEADER ================= -->
-
     <header>
-
         <div class="logo">
             <h2>MediMarket</h2>
         </div>
 
         <nav>
-
             <ul>
-
                 <li><a href="index.html">Home</a></li>
-
                 <li><a href="marketplace.html">Marketplace</a></li>
-
                 <li><a href="categories.html">Categories</a></li>
-
                 <li><a href="compare.html" class="active">Compare</a></li>
-
                 <li><a href="sellers.html">Sellers</a></li>
-
                 <li><a href="about.html">About</a></li>
-
                 <li><a href="contact.html">Contact</a></li>
-
             </ul>
-
         </nav>
 
         <div class="header-buttons">
-
-            <a href="wishlist.html">
-                <i class="fas fa-heart"></i>
-            </a>
-
-            <a href="cart.html">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-
-            <a href="login.html" class="btn-login">
-                Login
-            </a>
-
+            <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="login.html" class="btn-login">Login</a>
         </div>
-
     </header>
 
-    <!-- ================= PAGE HERO ================= -->
-
+    <!-- ================= PAGE BANNER ================= -->
     <section class="page-banner">
-
-        <h1>Compare Medical Equipment</h1>
-
-        <p>
-
-            Compare specifications, pricing and features to
-            choose the best equipment for your healthcare facility.
-
-        </p>
-
+        <div class="banner-content">
+            <h1>Compare Medical Equipment</h1>
+            <p>Compare specifications, pricing and features to choose the best equipment for your healthcare facility.</p>
+        </div>
     </section>
 
     <!-- ================= COMPARISON TABLE ================= -->
-
     <section class="compare-section">
-
         <div class="table-responsive">
-
             <table class="compare-table">
-
                 <thead>
-
                     <tr>
-
                         <th>Feature</th>
-
                         <th>
-
-                            <img src="images/equipment1.jpg"
-                                alt="ECG Machine"
-                                width="150">
-
+                            <img src="assets/images/equipment1.jpg" alt="ECG Machine" width="150">
                             <h3>ECG Machine</h3>
-
                         </th>
-
                         <th>
-
-                            <img src="images/equipment2.jpg"
-                                alt="Patient Monitor"
-                                width="150">
-
+                            <img src="assets/images/equipment2.jpg" alt="Patient Monitor" width="150">
                             <h3>Patient Monitor</h3>
-
                         </th>
-
                         <th>
-
-                            <img src="images/equipment3.jpg"
-                                alt="Ultrasound Machine"
-                                width="150">
-
+                            <img src="assets/images/equipment3.jpg" alt="Ultrasound Machine" width="150">
                             <h3>Ultrasound Machine</h3>
-
                         </th>
-
                     </tr>
-
                 </thead>
 
                 <tbody>
-
                     <tr>
-
                         <td><strong>Price</strong></td>
-
                         <td>KSh 150,000</td>
-
                         <td>KSh 220,000</td>
-
                         <td>KSh 980,000</td>
-
                     </tr>
-
                     <tr>
-
                         <td><strong>Condition</strong></td>
-
                         <td>New</td>
-
                         <td>New</td>
-
                         <td>Refurbished</td>
-
                     </tr>
-
                     <tr>
-
                         <td><strong>Warranty</strong></td>
-
                         <td>2 Years</td>
-
                         <td>3 Years</td>
-
                         <td>1 Year</td>
-
                     </tr>
-
                     <tr>
-
                         <td><strong>Availability</strong></td>
-
                         <td>In Stock</td>
-
                         <td>In Stock</td>
-
                         <td>Limited Stock</td>
-
                     </tr>
-
                     <tr>
-
                         <td><strong>Seller</strong></td>
-
                         <td>MediTech Supplies</td>
-
                         <td>HealthCare Solutions</td>
-
                         <td>Prime Medical Equipment</td>
-
                     </tr>
-
                     <tr>
-
                         <td><strong>Category</strong></td>
-
                         <td>Diagnostic</td>
-
                         <td>Monitoring</td>
-
                         <td>Imaging</td>
-
                     </tr>
-
                     <tr>
-
                         <td><strong>Delivery</strong></td>
-
                         <td>2-3 Days</td>
-
                         <td>3-5 Days</td>
-
                         <td>5-7 Days</td>
-
                     </tr>
-
                     <tr>
-
                         <td><strong>Certification</strong></td>
-
                         <td>FDA Approved</td>
-
                         <td>ISO Certified</td>
-
                         <td>CE Certified</td>
-
                     </tr>
-
                     <tr>
-
                         <td><strong>Rating</strong></td>
-
-                        <td>⭐⭐⭐⭐⭐</td>
-
-                        <td>⭐⭐⭐⭐☆</td>
-
-                        <td>⭐⭐⭐⭐⭐</td>
-
+                        <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                        <td><span class="stars">⭐⭐⭐⭐☆</span></td>
+                        <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
                     </tr>
-
                     <tr>
-
                         <td><strong>Action</strong></td>
-
-                        <td>
-
-                            <a href="equipment-details.html"
-                                class="btn-primary">
-
-                                View Details
-
-                            </a>
-
-                        </td>
-
-                        <td>
-
-                            <a href="equipment-details.html"
-                                class="btn-primary">
-
-                                View Details
-
-                            </a>
-
-                        </td>
-
-                        <td>
-
-                            <a href="equipment-details.html"
-                                class="btn-primary">
-
-                                View Details
-
-                            </a>
-
-                        </td>
-
+                        <td><a href="equipment-details.html" class="btn-primary">View Details</a></td>
+                        <td><a href="equipment-details.html" class="btn-primary">View Details</a></td>
+                        <td><a href="equipment-details.html" class="btn-primary">View Details</a></td>
                     </tr>
-
                 </tbody>
-
             </table>
-
         </div>
-
     </section>
 
     <!-- ================= WHY COMPARE ================= -->
-
     <section class="features">
-
         <h2>Why Compare Products?</h2>
-
         <div class="feature-grid">
-
             <div class="feature-card">
-
                 <i class="fas fa-balance-scale"></i>
-
                 <h3>Easy Comparison</h3>
-
-                <p>
-
-                    View product specifications side by side.
-
-                </p>
-
+                <p>View product specifications side by side.</p>
             </div>
-
             <div class="feature-card">
-
                 <i class="fas fa-dollar-sign"></i>
-
                 <h3>Save Money</h3>
-
-                <p>
-
-                    Compare prices from different verified sellers.
-
-                </p>
-
+                <p>Compare prices from different verified sellers.</p>
             </div>
-
             <div class="feature-card">
-
                 <i class="fas fa-star"></i>
-
                 <h3>Better Decisions</h3>
-
-                <p>
-
-                    Select equipment based on ratings,
-                    warranty and specifications.
-
-                </p>
-
+                <p>Select equipment based on ratings, warranty and specifications.</p>
             </div>
-
         </div>
-
     </section>
 
     <!-- ================= CALL TO ACTION ================= -->
-
     <section class="cta">
-
         <h2>Need More Medical Equipment?</h2>
-
-        <p>
-
-            Browse thousands of products from trusted suppliers.
-
-        </p>
-
-        <a href="marketplace.html" class="btn-primary">
-
-            Browse Marketplace
-
-        </a>
-
+        <p>Browse thousands of products from trusted suppliers.</p>
+        <a href="marketplace.html" class="btn-primary">Browse Marketplace</a>
     </section>
 
     <!-- ================= FOOTER ================= -->
-
     <footer>
-
         <div class="footer-container">
-
             <div>
-
                 <h3>MediMarket</h3>
-
-                <p>
-
-                    Kenya's trusted medical equipment marketplace.
-
-                </p>
-
+                <p>Kenya's trusted medical equipment marketplace.</p>
             </div>
-
             <div>
-
                 <h3>Quick Links</h3>
-
                 <ul>
-
                     <li><a href="marketplace.html">Marketplace</a></li>
-
                     <li><a href="categories.html">Categories</a></li>
-
                     <li><a href="about.html">About</a></li>
-
                     <li><a href="contact.html">Contact</a></li>
-
                 </ul>
-
             </div>
-
             <div>
-
                 <h3>Support</h3>
-
                 <ul>
-
                     <li><a href="faq.html">FAQ</a></li>
-
                     <li><a href="support.html">Support</a></li>
-
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
-
                 </ul>
-
             </div>
-
             <div>
-
                 <h3>Follow Us</h3>
-
-                <a href="#"><i class="fab fa-facebook"></i></a>
-
-                <a href="#"><i class="fab fa-twitter"></i></a>
-
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-
-                <a href="#"><i class="fab fa-instagram"></i></a>
-
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-
         </div>
-
         <hr>
-
-        <p class="copyright">
-
-            &copy; 2026 MediMarket. All Rights Reserved.
-
-        </p>
-
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>

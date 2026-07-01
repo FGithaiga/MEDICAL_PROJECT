@@ -3,44 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
-    <!-- Link your external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Article | MediMarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/article.css">
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>Article Title</h1>
-        <p>Subtitle or tagline goes here</p>
+        <div class="logo">
+            <h2>MediMarket</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
 
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Article Title</h1>
+            <p>Subtitle or tagline goes here</p>
+        </div>
+    </section>
+
+    <!-- ================= ARTICLE CONTENT ================= -->
     <main class="article-container">
         <article>
+            <div class="article-header">
+                <div class="article-meta">
+                    <span><i class="fas fa-calendar-alt"></i> June 30, 2026</span>
+                    <span><i class="fas fa-user"></i> By Admin</span>
+                    <span><i class="fas fa-tag"></i> Medical Technology</span>
+                </div>
+            </div>
+
             <h2>Introduction</h2>
-            <p>
-                This is the opening section of the article. It introduces the topic and sets the stage for the content that follows.
-            </p>
+            <p>This is the opening section of the article. It introduces the topic and sets the stage for the content that follows.</p>
 
             <h2>Section 1</h2>
-            <p>
-                Here you can write detailed information about the first part of your topic. Use multiple paragraphs if needed.
-            </p>
+            <p>Here you can write detailed information about the first part of your topic. Use multiple paragraphs if needed.</p>
 
             <h2>Section 2</h2>
-            <p>
-                Continue with another section of your article. You can include examples, explanations, or supporting details.
-            </p>
+            <p>Continue with another section of your article. You can include examples, explanations, or supporting details.</p>
 
             <h2>Conclusion</h2>
-            <p>
-                Summarize the key points of the article and provide final thoughts or recommendations.
-            </p>
+            <p>Summarize the key points of the article and provide final thoughts or recommendations.</p>
+
+            <div class="article-tags">
+                <span>Healthcare</span>
+                <span>Medical Technology</span>
+                <span>Innovation</span>
+            </div>
         </article>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Medical Project. All rights reserved.</p>
+        <div class="footer-container">
+            <div>
+                <h3>MediMarket</h3>
+                <p>Connecting healthcare providers with trusted medical equipment suppliers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -3,62 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <!-- Link your external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>FAQ | MediMarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/faq.css">
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>Frequently Asked Questions</h1>
-        <p>Find answers to common questions about our medical project</p>
+        <div class="logo">
+            <h2>MediMarket</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="sellers.html">Sellers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
 
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about MediMarket</p>
+        </div>
+    </section>
+
+    <!-- ================= FAQ CONTENT ================= -->
     <main class="faq-container">
         <section class="faq-item">
-            <h2>What is the purpose of this project?</h2>
-            <p>
-                Our medical project aims to improve healthcare accessibility and efficiency 
-                by providing tools for patient management, appointment scheduling, and medical data analysis.
-            </p>
+            <h2><i class="fas fa-question-circle"></i> What is the purpose of this project?</h2>
+            <p>Our medical project aims to improve healthcare accessibility and efficiency by providing tools for patient management, appointment scheduling, and medical data analysis.</p>
         </section>
 
         <section class="faq-item">
-            <h2>How can patients register?</h2>
-            <p>
-                Patients can register through the registration form available on the homepage. 
-                Once registered, they can access their medical records and schedule appointments.
-            </p>
+            <h2><i class="fas fa-question-circle"></i> How can patients register?</h2>
+            <p>Patients can register through the registration form available on the homepage. Once registered, they can access their medical records and schedule appointments.</p>
         </section>
 
         <section class="faq-item">
-            <h2>Is my data secure?</h2>
-            <p>
-                Yes, we prioritize data security. All patient information is stored securely 
-                and protected with encryption to ensure confidentiality.
-            </p>
+            <h2><i class="fas fa-question-circle"></i> Is my data secure?</h2>
+            <p>Yes, we prioritize data security. All patient information is stored securely and protected with encryption to ensure confidentiality.</p>
         </section>
 
         <section class="faq-item">
-            <h2>Can doctors access patient records?</h2>
-            <p>
-                Authorized doctors and healthcare providers can access patient records 
-                to provide better treatment and ensure continuity of care.
-            </p>
+            <h2><i class="fas fa-question-circle"></i> Can doctors access patient records?</h2>
+            <p>Authorized doctors and healthcare providers can access patient records to provide better treatment and ensure continuity of care.</p>
         </section>
 
         <section class="faq-item">
-            <h2>How do I contact support?</h2>
-            <p>
-                You can reach our support team via the <a href="contact.html">Contact Us</a> page. 
-                We’re available to assist with any issues or questions.
-            </p>
+            <h2><i class="fas fa-question-circle"></i> How do I contact support?</h2>
+            <p>You can reach our support team via the <a href="contact.html">Contact Us</a> page. We're available to assist with any issues or questions.</p>
         </section>
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Medical Project. All rights reserved.</p>
+        <div class="footer-container">
+            <div>
+                <h3>MediMarket</h3>
+                <p>Connecting healthcare providers with trusted medical equipment suppliers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

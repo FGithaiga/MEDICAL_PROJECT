@@ -3,43 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sellers</title>
-    <!-- Link your external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Sellers | MediMarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/sellers.css">
 </head>
 <body>
 
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>Our Sellers</h1>
-        <p>Meet trusted sellers in the marketplace</p>
+        <div class="logo">
+            <h2>MediMarket</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="sellers.html" class="active">Sellers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="register.html" class="btn-register">Register</a>
+        </div>
     </header>
 
-    <div class="container">
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Sellers</h1>
+            <p>Meet trusted sellers in the marketplace</p>
+        </div>
+    </section>
+
+    <!-- ================= SELLERS GRID ================= -->
+    <div class="sellers-grid">
         <div class="seller-card">
-            <img src="https://via.placeholder.com/100" alt="Seller 1">
+            <img src="assets/images/seller.jpg" alt="Seller 1">
             <h3>John Doe</h3>
-            <p>Specializes in electronics and accessories. Known for fast delivery and quality products.</p>
-            <a href="seller-profile.html" class="btn">View Profile</a>
+            <p class="seller-rating">⭐⭐⭐⭐⭐ (4.9/5)</p>
+            <p class="seller-specialty">Medical Equipment Specialist</p>
+            <p class="seller-products"><i class="fas fa-box"></i> 24 Products</p>
+            <a href="seller-profile.html" class="btn-primary">View Profile</a>
         </div>
 
         <div class="seller-card">
-            <img src="https://via.placeholder.com/100" alt="Seller 2">
+            <img src="assets/images/seller2.jpg" alt="Seller 2">
             <h3>Jane Smith</h3>
-            <p>Offers handmade crafts and home décor. Customers love her unique designs.</p>
-            <a href="seller-profile.html" class="btn">View Profile</a>
+            <p class="seller-rating">⭐⭐⭐⭐☆ (4.7/5)</p>
+            <p class="seller-specialty">Diagnostic Equipment</p>
+            <p class="seller-products"><i class="fas fa-box"></i> 18 Products</p>
+            <a href="seller-profile.html" class="btn-primary">View Profile</a>
         </div>
 
         <div class="seller-card">
-            <img src="https://via.placeholder.com/100" alt="Seller 3">
+            <img src="assets/images/seller3.jpg" alt="Seller 3">
             <h3>Michael Brown</h3>
-            <p>Experienced seller in fashion and clothing. Provides trendy outfits at affordable prices.</p>
-            <a href="seller-profile.html" class="btn">View Profile</a>
+            <p class="seller-rating">⭐⭐⭐⭐⭐ (5.0/5)</p>
+            <p class="seller-specialty">Surgical Instruments</p>
+            <p class="seller-products"><i class="fas fa-box"></i> 32 Products</p>
+            <a href="seller-profile.html" class="btn-primary">View Profile</a>
+        </div>
+
+        <div class="seller-card">
+            <img src="assets/images/seller4.jpg" alt="Seller 4">
+            <h3>Sarah Kamau</h3>
+            <p class="seller-rating">⭐⭐⭐⭐⭐ (4.8/5)</p>
+            <p class="seller-specialty">Laboratory Equipment</p>
+            <p class="seller-products"><i class="fas fa-box"></i> 15 Products</p>
+            <a href="seller-profile.html" class="btn-primary">View Profile</a>
+        </div>
+
+        <div class="seller-card">
+            <img src="assets/images/seller5.jpg" alt="Seller 5">
+            <h3>David Ochieng</h3>
+            <p class="seller-rating">⭐⭐⭐⭐☆ (4.6/5)</p>
+            <p class="seller-specialty">Hospital Furniture</p>
+            <p class="seller-products"><i class="fas fa-box"></i> 20 Products</p>
+            <a href="seller-profile.html" class="btn-primary">View Profile</a>
+        </div>
+
+        <div class="seller-card">
+            <img src="assets/images/seller6.jpg" alt="Seller 6">
+            <h3>Mary Atieno</h3>
+            <p class="seller-rating">⭐⭐⭐⭐⭐ (4.9/5)</p>
+            <p class="seller-specialty">Pharmacy Equipment</p>
+            <p class="seller-products"><i class="fas fa-box"></i> 12 Products</p>
+            <a href="seller-profile.html" class="btn-primary">View Profile</a>
         </div>
     </div>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Online Marketplace. All rights reserved.</p>
+        <div class="footer-container">
+            <div>
+                <h3>MediMarket</h3>
+                <p>Connecting healthcare providers with trusted medical equipment suppliers.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="marketplace.html">Marketplace</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

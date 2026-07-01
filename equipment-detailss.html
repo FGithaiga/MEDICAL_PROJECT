@@ -7,23 +7,28 @@
     <title>Equipment Details | MediMarket</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- ====== CORE CSS ====== -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+
+    <!-- ====== PAGE-SPECIFIC CSS ====== -->
+    <link rel="stylesheet" href="assets/css/equipment-details.css">
 </head>
 
 <body>
 
     <!-- ================= HEADER ================= -->
-
     <header>
-
         <div class="logo">
             <h2>MediMarket</h2>
         </div>
@@ -45,433 +50,206 @@
             <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
             <a href="login.html" class="btn-login">Login</a>
         </div>
-
     </header>
 
-    <!-- ================= PAGE TITLE ================= -->
-
+    <!-- ================= PAGE BANNER ================= -->
     <section class="page-banner">
-
-        <h1>Equipment Details</h1>
-
-        <p>
-            View detailed information about this medical device.
-        </p>
-
+        <div class="banner-content">
+            <h1>Equipment Details</h1>
+            <p>View detailed information about this medical device.</p>
+        </div>
     </section>
 
     <!-- ================= PRODUCT DETAILS ================= -->
-
     <section class="product-details">
-
         <!-- Product Images -->
-
         <div class="product-gallery">
-
-            <img src="images/equipment1.jpg"
-                alt="ECG Machine"
-                class="main-image">
-
+            <img src="assets/images/equipment1.jpg" alt="ECG Machine" class="main-image">
             <div class="thumbnail-images">
-
-                <img src="images/equipment1.jpg" alt="Thumbnail">
-
-                <img src="images/equipment2.jpg" alt="Thumbnail">
-
-                <img src="images/equipment3.jpg" alt="Thumbnail">
-
+                <img src="assets/images/equipment1.jpg" alt="Thumbnail">
+                <img src="assets/images/equipment2.jpg" alt="Thumbnail">
+                <img src="assets/images/equipment3.jpg" alt="Thumbnail">
             </div>
-
         </div>
 
         <!-- Product Information -->
-
         <div class="product-info">
-
             <h2>Digital ECG Machine</h2>
-
-            <p class="rating">
-
-                ⭐⭐⭐⭐⭐ (4.9/5)
-
-            </p>
-
-            <h3 class="price">
-
-                KSh 150,000
-
-            </h3>
-
-            <p>
-
-                High-precision 12-lead digital ECG machine suitable for
-                hospitals, clinics and diagnostic centres.
-                Designed for fast and accurate cardiac diagnosis.
-
-            </p>
+            <p class="rating">⭐⭐⭐⭐⭐ (4.9/5)</p>
+            <h3 class="price">KSh 150,000</h3>
+            <p>High-precision 12-lead digital ECG machine suitable for hospitals, clinics and diagnostic centres. Designed for fast and accurate cardiac diagnosis.</p>
 
             <div class="availability">
-
                 <p><strong>Status:</strong> In Stock</p>
-
                 <p><strong>Condition:</strong> Brand New</p>
-
                 <p><strong>Warranty:</strong> 2 Years</p>
-
             </div>
 
             <div class="quantity">
-
                 <label>Quantity</label>
-
                 <input type="number" min="1" value="1">
-
             </div>
 
             <div class="product-buttons">
-
                 <a href="cart.html" class="btn-primary">
-
-                    <i class="fas fa-shopping-cart"></i>
-
-                    Add to Cart
-
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
                 </a>
-
                 <a href="wishlist.html" class="btn-secondary">
-
-                    <i class="fas fa-heart"></i>
-
-                    Wishlist
-
+                    <i class="fas fa-heart"></i> Wishlist
                 </a>
-
                 <a href="compare.html" class="btn-secondary">
-
-                    <i class="fas fa-balance-scale"></i>
-
-                    Compare
-
+                    <i class="fas fa-balance-scale"></i> Compare
                 </a>
-
             </div>
-
         </div>
-
     </section>
 
     <!-- ================= SPECIFICATIONS ================= -->
-
     <section class="specifications">
-
         <h2>Technical Specifications</h2>
-
         <table>
-
             <tr>
                 <th>Feature</th>
                 <th>Description</th>
             </tr>
-
             <tr>
                 <td>Brand</td>
                 <td>Philips</td>
             </tr>
-
             <tr>
                 <td>Model</td>
                 <td>ECG-1200</td>
             </tr>
-
             <tr>
                 <td>Display</td>
                 <td>10-inch LCD Touch Screen</td>
             </tr>
-
             <tr>
                 <td>Channels</td>
                 <td>12 Lead</td>
             </tr>
-
             <tr>
                 <td>Power</td>
                 <td>Rechargeable Battery & AC Power</td>
             </tr>
-
             <tr>
                 <td>Connectivity</td>
                 <td>USB, Wi-Fi</td>
             </tr>
-
             <tr>
                 <td>Certification</td>
                 <td>FDA & ISO Certified</td>
             </tr>
-
         </table>
-
     </section>
 
     <!-- ================= SELLER INFORMATION ================= -->
-
     <section class="seller-info">
-
         <h2>Seller Information</h2>
-
         <div class="seller-card">
-
-            <img src="images/seller.jpg"
-                alt="Seller">
-
+            <img src="assets/images/seller.jpg" alt="Seller">
             <div>
-
                 <h3>MediTech Supplies Ltd.</h3>
-
-                <p>
-
-                    Verified Medical Equipment Supplier
-
-                </p>
-
-                <p>
-
-                    ⭐⭐⭐⭐⭐ (250 Reviews)
-
-                </p>
-
-                <p>
-
-                    Nairobi, Kenya
-
-                </p>
-
-                <a href="seller-profile.html" class="btn-primary">
-
-                    View Seller Profile
-
-                </a>
-
+                <p>Verified Medical Equipment Supplier</p>
+                <p>⭐⭐⭐⭐⭐ (250 Reviews)</p>
+                <p>Nairobi, Kenya</p>
+                <a href="seller-profile.html" class="btn-primary">View Seller Profile</a>
             </div>
-
         </div>
-
     </section>
 
     <!-- ================= PRODUCT DESCRIPTION ================= -->
-
     <section class="description">
-
         <h2>Product Description</h2>
-
-        <p>
-
-            This ECG machine delivers fast and reliable cardiac
-            diagnostics using advanced signal processing technology.
-
-            It is ideal for hospitals, private clinics, diagnostic
-            centres and emergency departments.
-
-        </p>
-
+        <p>This ECG machine delivers fast and reliable cardiac diagnostics using advanced signal processing technology. It is ideal for hospitals, private clinics, diagnostic centres and emergency departments.</p>
         <ul>
-
             <li>✔ High-resolution LCD display</li>
-
             <li>✔ Portable design</li>
-
             <li>✔ Automatic ECG interpretation</li>
-
             <li>✔ Patient data storage</li>
-
             <li>✔ USB export functionality</li>
-
             <li>✔ Rechargeable battery</li>
-
         </ul>
-
     </section>
 
     <!-- ================= CUSTOMER REVIEWS ================= -->
-
     <section class="reviews">
-
         <h2>Customer Reviews</h2>
-
         <div class="review">
-
             <h4>Dr. James Mwangi</h4>
-
             <p>⭐⭐⭐⭐⭐</p>
-
-            <p>
-
-                Excellent quality ECG machine with very accurate
-                readings. Delivery was quick.
-
-            </p>
-
+            <p>Excellent quality ECG machine with very accurate readings. Delivery was quick.</p>
         </div>
-
         <div class="review">
-
             <h4>Hope Medical Centre</h4>
-
             <p>⭐⭐⭐⭐⭐</p>
-
-            <p>
-
-                Great customer support and affordable pricing.
-
-            </p>
-
+            <p>Great customer support and affordable pricing.</p>
         </div>
-
     </section>
 
     <!-- ================= RELATED PRODUCTS ================= -->
-
     <section class="related-products">
-
         <h2>Related Equipment</h2>
-
         <div class="equipment-grid">
-
             <div class="equipment-card">
-
-                <img src="images/equipment2.jpg"
-                    alt="Patient Monitor">
-
+                <img src="assets/images/equipment2.jpg" alt="Patient Monitor">
                 <h3>Patient Monitor</h3>
-
                 <p>KSh 220,000</p>
-
-                <a href="equipment-details.html"
-                    class="btn-primary">
-
-                    View Details
-
-                </a>
-
+                <a href="equipment-details.html" class="btn-primary">View Details</a>
             </div>
-
             <div class="equipment-card">
-
-                <img src="images/equipment3.jpg"
-                    alt="Ultrasound">
-
+                <img src="assets/images/equipment3.jpg" alt="Ultrasound">
                 <h3>Ultrasound Machine</h3>
-
                 <p>KSh 980,000</p>
-
-                <a href="equipment-details.html"
-                    class="btn-primary">
-
-                    View Details
-
-                </a>
-
+                <a href="equipment-details.html" class="btn-primary">View Details</a>
             </div>
-
             <div class="equipment-card">
-
-                <img src="images/equipment4.jpg"
-                    alt="Ventilator">
-
+                <img src="assets/images/equipment4.jpg" alt="Ventilator">
                 <h3>ICU Ventilator</h3>
-
                 <p>KSh 1,250,000</p>
-
-                <a href="equipment-details.html"
-                    class="btn-primary">
-
-                    View Details
-
-                </a>
-
+                <a href="equipment-details.html" class="btn-primary">View Details</a>
             </div>
-
         </div>
-
     </section>
 
     <!-- ================= FOOTER ================= -->
-
     <footer>
-
         <div class="footer-container">
-
             <div>
-
                 <h3>MediMarket</h3>
-
-                <p>
-
-                    Connecting healthcare providers with trusted
-                    medical equipment suppliers.
-
-                </p>
-
+                <p>Connecting healthcare providers with trusted medical equipment suppliers.</p>
             </div>
-
             <div>
-
                 <h3>Quick Links</h3>
-
                 <ul>
-
                     <li><a href="marketplace.html">Marketplace</a></li>
-
                     <li><a href="categories.html">Categories</a></li>
-
                     <li><a href="about.html">About</a></li>
-
                     <li><a href="contact.html">Contact</a></li>
-
                 </ul>
-
             </div>
-
             <div>
-
                 <h3>Support</h3>
-
                 <ul>
-
                     <li><a href="faq.html">FAQ</a></li>
-
                     <li><a href="support.html">Support</a></li>
-
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
-
                 </ul>
-
             </div>
-
             <div>
-
                 <h3>Follow Us</h3>
-
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-
         </div>
-
         <hr>
-
-        <p class="copyright">
-
-            &copy; 2026 MediMarket. All Rights Reserved.
-
-        </p>
-
+        <p class="copyright">&copy; 2026 MediMarket. All Rights Reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>
